@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genetic Rocket Lab</title>
+<link rel="stylesheet" href="styles.css">
+<!-- <style>
+  body{margin:0;background:#0a0a0c;color:#fff;font-family:sans-serif;}
+  canvas{display:block;position:absolute;top:0;left:0;}
+  .panel{position:absolute;top:10px;left:10px;background:rgba(0,0,0,0.7);padding:10px;border-radius:6px;}
+  .panel-header{display:flex;justify-content:space-between;align-items:center;}
+  .controls label{display:block;margin:5px 0;font-size:14px;}
+  .controls input[type=range]{width:150px;}
+  .viz{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.7);padding:10px;border-radius:6px;}
+  #graph{border:1px solid #333;background:#111;}
+</style> -->
+</head>
+<body>
+
+<canvas id="sim"></canvas>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>🚀 Rocket Evolution Lab</h3>
+    <button id="toggleUI">☰</button>
+  </div>
+
+  <div id="uiContent">
+    <p class="section-desc">Interactive genetic algorithm simulation where rockets evolve to reach targets while avoiding obstacles.</p>
+
+    <div class="controls">
+      <label>Population
+        <input type="range" id="pop" min="20" max="200" value="80">
+        <span id="popVal">80</span>
+      </label>
+
+      <label>Mutation Rate
+        <input type="range" id="mutation" min="0" max="0.2" step="0.01" value="0.02">
+        <span id="mutVal">0.02</span>
+      </label>
+
+      <label>Lifespan
+        <input type="range" id="life" min="100" max="600" value="250">
+        <span id="lifeVal">250</span>
+      </label>
+
+      <label>Turn Speed
+        <input type="range" id="turn" min="0.1" max="1.5" step="0.05" value="0.35">
+        <span id="turnVal">0.35</span>
+      </label>
+
+      <label>Move Speed
+        <input type="range" id="movespeed" min="0.1" max="2" step="0.05" value="0.4">
+        <span id="speedVal">0.4</span>
+      </label>
+
+      <label>Step Speed
+        <input type="range" id="stepspeed" min="1" max="20" value="4">
+        <span id="stepVal">4</span>
+      </label>
+
+      <label>Learning Factor
+        <input type="range" id="learning" min="0.5" max="3" step="0.1" value="1">
+        <span id="learnVal">1</span>
+      </label>
+        <button id="pauseBtn">⏸ Pause</button>
+      <button id="restart">Restart Simulation</button>
+    </div>
+
+    <div class="tips desktop-tips">
+      <p class="section-desc">Controls (Desktop):</p>
+      <p>Shift + Click → Add Target</p>
+      <p>Shift + Right Click → Delete Target</p>
+      <p>Drag → Draw obstacle</p>
+      <p>Right Drag → Erase obstacle</p>
+      <p>Drag targets → Move them around</p>
+    </div>
+
+    <div class="tips mobile-tips">
+      <p class="section-desc">Controls (Mobile):</p>
+      <p>Tap → Add Target</p>
+      <p>Drag → Draw obstacle</p>
+      <p>Long Press + Drag → Delete objects</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="viz">
+  <div class="viz-header">
+    <h4 id="vizHeader">Training Data</h4>
+    <button id="toggleViz">▼</button>
+  </div>
+
+  <div id="vizContent" name="vizContent">
+    <p class="section-desc">Shows how the genetic algorithm improves across generations.</p>
+    <p>Generation: <span id="generation">0</span></p>
+    <p>Targets Achieved: <span id="success">0</span></p>
+    <p>Crashed Rockets: <span id="crash">0</span></p>
+    <p>Targets Collected: <span id="acquired">0</span></p>
+    <canvas id="graph" width="200" height="100"></canvas>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
