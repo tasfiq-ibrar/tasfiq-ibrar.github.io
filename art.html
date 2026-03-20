@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=62038&format=png&color=000000">
+  <title>The Multiverse of Hobbies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="nav__inner container">
+        <div class="nav__brand">
+          <span class="nav__logo-dot"></span>
+          <span class="nav__title">Arts &amp; Crafts</span>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+        </button>
+        <nav class="nav__links">
+          <a href="index.html#hero" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+
+          <a href="index.html#universes" class="nav__link">Universes</a>
+
+          <div class="nav__dropdown-menu">
+
+          <a class="link-muted" href="programming.html">Programming</a>
+          <a class="link-muted" href="gamedev.html">Gamedev</a>
+          <a class="link-muted" href="art.html">Arts &amp; Crafts</a>
+          <a class="link-muted" href="music.html">Music</a>
+          <a class="link-muted" href="learning.html">Learning</a>
+
+          </div>
+          </div>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#insights" class="nav__link">Insights</a>
+          <a href="index.html#contact" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero section--universe">
+        <div class="container">
+      <canvas id="starfield"></canvas>
+          <div class="universe__header reveal blur-on-reveal">
+            <div>
+              <p class="eyebrow">Universe III</p>
+              <h1 class="universe__title">Arts &amp; Crafts Universe</h1>
+            </div>
+            <p class="universe__description">
+              Paintings, Sketches, Crafts and Compositions. This universe studies how visual art and aesthetic constructions
+              communicate feeling.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="section">
+        <div class="container narrow">
+          <p class="eyebrow reveal">Learning Insights</p>
+          <h2 class="section__title reveal">What visual work keeps revealing.</h2>
+
+          <div class="philosophy__body">
+            <div class="glass-panel reveal" style="padding: 20px 22px; margin-bottom: 20px; display:flex; gap:18px;">
+              <div style="flex:2;">
+                <h3 class="card__title">Getting started here</h3>
+                <p class="section__body">
+                  The only tips and tricks at getting better at drawing, is to actually draw, consistently. It can be anything you see in your daily life. 
+                  And for learning, free online resources are there in Youtube and Pinterest.
+              </div>
+              <aside style="flex:1; border-left:1px solid rgba(255,255,255,0.1); padding-left:16px;">
+                <h4 class="card__title">Extra tips</h4>
+                <p class="section__body">• Avoid Art Block<br />• Avoid tutorial hell<br />• Don't be disappointed in your work.<br />• Study other peoples' works(Not copy).</p>
+              </aside>
+            </div>
+
+            <div class="glass-panel reveal" style="padding: 20px 22px; display:flex; gap:18px;">
+              <div style="flex:2;">
+                <h3 class="card__title">References</h3>
+                <p class="section__body">
+                  My top references mostly come from Pinterest. Also for versatile mediums, I follow Jazza on Youtube. Again, stylized references are mostly inspired by Sam Yang.
+                  Also I follow Gretel Lusky, for her art books, and comic book art style. Also I found out a underrated Youtuber named Andrew Cadima, who is extremely talented with his painting and coloring skills.
+                </p>
+              </div>
+              <aside style="flex:1; border-left:1px solid rgba(255,255,255,0.1); padding-left:16px;">
+                <h4 class="card__title">Library</h4>
+                <p class="section__body">• <a href="https://www.youtube.com/@samdoesarts" class="nav__link">Sam Yang</a>
+                  <br />• <a href="https://www.youtube.com/@Gretlusky" class="nav__link">GretLusky</a> [Also visit her website for references]
+                  <br />• <a href="https://www.youtube.com/@Jazza" class="nav__link">Jazza</a>
+                  <br />• <a href="https://www.youtube.com/@andrewcadima" class="nav__link">Andrew Cadima</a></p>
+              </aside>
+            </div>
+
+            <div class="glass-panel reveal" style="padding: 20px 22px; margin-bottom: 20px; display:flex; gap:18px;">
+              <div style="flex:2;">
+                <h3 class="card__title">Future goals</h3>
+                <p class="section__body">
+                  Right now, I'm a noob at Portraits, learning to do realistic portraits would be fun. Also checking out some exhibitions would also be pretty fun.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-left reveal">
+              <p class="eyebrow">Projects</p>
+              <h2 class="section__title">Collection of some works.</h2>
+            </div>
+          </div>
+          <div class="universe__grid">
+            <article class="card card--experiment glass-panel reveal js-tilt">
+                  <div class="featured-card__media--placeholder" 
+                      style="
+                          background-image: url('images/ship_view.JPG');
+                          background-position: center;
+                          height: 30vw;
+
+                          /* border: 2px solid; thickness */
+                          /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                          border-radius: 12px; /* optional */
+                      ">
+                  </div>
+                  <div class="card__body">
+                    <div class="card__meta">
+                      <span class="tag">Craft</span>
+                      <span class="meta-text">Handmade</span>
+                    </div>
+                    <h3 class="card__title">The Black Pearl</h3>
+                    <p class="card__text">
+                      Inspired from the franchise "Pirates of the Carribean", this craft was made for the Creativity Exhibition 2025. After working and planning for over a week, this masterpiece was created, which ended up securing <span class="hero__accent">Champion</span> in the competition.
+                      It is also to be mentioned, many juniors also helped me in building this model. And moreover, it is now in display in the College Museum in FCC.<br/><br/>
+                      This project used many daily-life items for its construction. My favorite thing about this, is the wood texture was made from cartridge paper that was colored accordingly. 
+                      Also the shiny texture comes from varnish, that is used to restore paintings:)
+                    </p>
+                  </div>
+            </article>
+            <article class="card card--experiment glass-panel reveal js-tilt">
+                  <div class="featured-card__media--placeholder" 
+                      style="
+                          background-image: url('images/craft.jpg');
+                          background-position: top;
+                          height: 30vw;
+
+                          /* border: 2px solid; thickness */
+                          /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                          border-radius: 12px; /* optional */
+                      ">
+                  </div>
+                  <div class="card__body">
+                    <div class="card__meta">
+                      <span class="tag">Craft</span>
+                      <span class="meta-text">Handmade</span>
+                    </div>
+                    <h3 class="card__title">Popup Collections</h3>
+                    <p class="card__text">
+                      Paper crafts are the creative practice of shaping paper into decorative or functional designs through folding, cutting, and layering. 
+                      They include origami, collages, and handmade objects, showing how a simple sheet can be transformed into expressive art with minimal tools. <br/><br/> 
+
+                      Pop‑ups and paper engineering extend this tradition by adding mechanics and movement. Pop‑ups create interactive structures that rise into three dimensions when opened, 
+                      while paper engineering provides the technical precision behind these effects—using geometry and design to build complex, kinetic works. 
+                    </p>
+                  </div>
+            </article>
+            <article class="card glass-panel reveal js-tilt">
+              <div class="card__media card__media--placeholder">Gallery of Digital Art</div>
+              <div class="card__body">
+              <div class="gallery">
+                <div class="featured-card__media--placeholder, gallery-item" 
+                    style="
+                        background-image: url('images/render.png');
+                        background-position: center;
+                        background-size: cover;
+                        aspect-ratio: 4/3;
+
+                        /* border: 2px solid; thickness */
+                        /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                        border-radius: 12px; /* optional */
+                    ">
+                </div>
+                <div class="featured-card__media--placeholder , gallery-item" 
+                    style="
+                        background-image: url('images/bgart.png');
+                        background-position: center;
+                        background-size: cover;
+                        aspect-ratio: 4/3;
+
+
+                        /* border: 2px solid; thickness */
+                        /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                        border-radius: 12px; /* optional */
+                    ">
+                </div>
+                <div class="featured-card__media--placeholder, gallery-item" 
+                    style="
+                        background-image: url('images/new3.png');
+                        background-position: bottom;
+                        background-size: cover;
+                        aspect-ratio: 1/1;
+
+
+                        /* border: 2px solid; thickness */
+                        /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                        border-radius: 12px; /* optional */
+                    ">
+                </div>
+                <div class="featured-card__media--placeholder , gallery-item" 
+                    style="
+                        background-image: url('images/new_sketch.png');
+                        background-position: center;
+                        background-size: cover;
+                        aspect-ratio: 1/1;
+
+
+                        /* border: 2px solid; thickness */
+                        /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                        border-radius: 12px; /* optional */
+                    ">
+                </div>
+                <div class="featured-card__media--placeholder , gallery-item" 
+                    style="
+                        background-image: url('images/new4.png');
+                        background-position: center;
+                        background-size: cover;
+                        aspect-ratio: 1/1;
+
+
+                        /* border: 2px solid; thickness */
+                        /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                        border-radius: 12px; /* optional */
+                    ">
+                </div>
+              </div>
+              </div>
+            </article>
+
+            <!-- <article class="card glass-panel reveal js-tilt">
+              <div class="card__media card__media--placeholder">Gallery of Sketches</div>
+              <div class="card__body">
+               <div class="gallery">
+                <div class="featured-card__media--placeholder, gallery-item" 
+                    style="
+                        background-image: url('images/render.png');
+                        background-position: center;
+                        background-size: cover;
+                        aspect-ratio: 4/3;
+
+                        /* border: 2px solid; thickness */
+                        /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                        border-radius: 12px; /* optional */
+                    ">
+                </div>
+                <div class="featured-card__media--placeholder , gallery-item" 
+                    style="
+                        background-image: url('images/bgart.png');
+                        background-position: center;
+                        background-size: cover;
+                        aspect-ratio: 4/3;
+
+
+                        /* border: 2px solid; thickness */
+                        /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                        border-radius: 12px; /* optional */
+                    ">
+                </div>
+               </div>
+              </div>
+            </article> -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="meta-text">&copy; <span id="year"></span> The Multiverse of Hobbies</span>
+        <span class="meta-text">Currently traveling through the Arts &amp; Crafts Universe.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,475 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=62038&format=png&color=000000">
+  <title>The Multiverse of Hobbies</title>
+  <meta name="description" content="A premium, cinematic portfolio exploring a multiverse of creative hobbies and universes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav" data-section="nav">
+      <div class="nav__inner container">
+        <div class="nav__brand">
+          <span class="nav__logo-dot"></span>
+          <span class="nav__title">The Multiverse of Hobbies</span>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+        </button>
+        <nav class="nav__links">
+          <a href="#hero" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+
+          <a href="#universes" class="nav__link">Universes</a>
+
+          <div class="nav__dropdown-menu">
+
+          <a class="link-muted" href="programming.html">Programming</a>
+          <a class="link-muted" href="gamedev.html">Gamedev</a>
+          <a class="link-muted" href="art.html">Art</a>
+          <a class="link-muted" href="music.html">Music</a>
+          <a class="link-muted" href="crafts.html">Crafts</a>
+          <a class="link-muted" href="learning.html">Learning</a>
+
+          </div>
+          </div>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#philosophy" class="nav__link">About</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Identity -->
+      <section id="hero" class="section section--hero" data-section="hero">
+        <div class="container hero__grid">
+          <div class="hero__identity reveal blur-on-reveal">
+            <p class="eyebrow">Portfolio / Creative Multiverse</p>
+            <h1 class="hero__title">
+              Hi, I'm <span class="text-muted underline-animate"><b>TASFIQ</b></span><br/>
+              <span class="hero__stacked">
+              Explorer
+              of<br />
+              Creative <span class="hero__accent">Universes</span>
+              </span>
+            </h1>
+            <p class="hero__subtitle">
+              A multidisciplinary creator exploring code, games, visuals, music, crafted objects, and learning — treating each as its own universe.
+            </p>
+            <div class="hero__actions">
+              <a href="#universes" class="button button--primary">Enter the Multiverse</a>
+            </div>
+            <div class="hero__meta">
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Universes</span>
+                <span class="hero__meta-value">6+</span>
+              </div>
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Projects & Experiments</span>
+                <span class="hero__meta-value">20+</span>
+              </div>
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Status</span>
+                <span class="hero__meta-value">Always Exploring</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__orbits reveal delayed js-parallax" data-parallax-speed="0.25">
+            <div class="constellation">
+              <span class="constellation__line" style="top:30%; left:18%; width:46%;"></span>
+              <span class="constellation__line" style="top:56%; left:40%; width:32%;"></span>
+              <span class="constellation__line" style="top:70%; left:14%; width:30%;"></span>
+              <span class="constellation__line" style="top:86%; left:30%; width:32%;"></span>
+
+              <span class="constellation__node" style="top:26%; left:16%;"></span>
+              <span class="constellation__node" style="top:26%; left:62%;"></span>
+              <span class="constellation__node" style="top:52%; left:72%;"></span>
+              <span class="constellation__node" style="top:66%; left:18%;"></span>
+
+              <span class="constellation__node" style="top:86%; left:26%;"></span>
+              <span class="constellation__node" style="top:36%; left:42%;"></span>
+              <span class="constellation__node" style="top:52%; left:62%;"></span>
+              <span class="constellation__node" style="top:96%; left:48%;"></span>
+              <!-- <a class="constellation-card js-tilt js-universe-link" href="programming.html" style="top:14%; left:8%;">
+                <div class="constellation-card__title">Programming</div>
+                <div>Systems &amp; tools that turn ideas into code.</div>
+              </a>
+
+              <a class="constellation-card js-tilt js-universe-link" href="gamedev.html" style="top:8%; right:4%;">
+                <div class="constellation-card__title">Game Dev</div>
+                <div>Worlds, rules, and playful interactions.</div>
+              </a>
+
+              <a class="constellation-card js-tilt js-universe-link" href="art.html" style="top:46%; right:3%;">
+                <div class="constellation-card__title">Visual &amp; Motion</div>
+                <div>Type, images, and animation studies.</div>
+              </a>
+
+              <a class="constellation-card js-tilt js-universe-link" href="music.html" style="bottom:5%; left:10%;">
+                <div class="constellation-card__title">Music</div>
+                <div>Loops and textures that score projects.</div>
+              </a> -->
+            </div>
+            <!-- <p class="hero__orbits-caption">
+              A small constellation of universes — follow any card to dive deeper into that world.
+            </p> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Multiverse Introduction -->
+      <section id="multiverse-intro" class="section section--intro" data-section="multiverse-intro">
+        <div class="container narrow reveal"><canvas id="starfield"></canvas>
+          <p class="eyebrow">Multiverse Concept</p>
+          <h2 class="section__title">
+            One mind, <span class="text-muted">many parallel timelines</span> of making.
+          </h2>
+          <p class="section__lede">
+            Instead of treating hobbies as side-notes, this portfolio treats each domain as a fully fledged universe.
+            As you scroll, you move between dimensions — from precise logic to playful visuals, from theoretical concepts to physical implementations.
+          </p>
+          <p class="section__body">
+            This is not a resume. It is a map of obsessions, experiments, and half-finished ideas that still taught me something valuable.
+            Each universe below contains selected projects, tiny experiments, and fragments that together describe how I think and create.
+          </p>
+        </div>
+      </section>
+
+      <!-- About / Self Section -->
+      <section id="about" class="section" data-section="about">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-left reveal">
+              <p class="eyebrow">About</p>
+              <h2 class="section__title">
+                Creator across <span class="hero__accent">many worlds</span>.
+              </h2>
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/profile.png');
+                      background-position: center;
+                      width: 250px;
+                      height: 250px;
+                      border: 2px solid; /* thickness */
+                      border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1;
+                      border-radius: 12px; /* optional */
+                  ">
+              </div><p class="text-muted">No other images from 2026:')</p>
+
+            </div>
+            <div class="section__header-right reveal delayed">
+              <p class="section__body data-split-words">
+                I’m <span class="hero__accent">Tasfiq Ibrar</span> , currently studying grade 12 in Faujdarhat Cadet College. Since COVID hit, I had the opportunity to dedicate myself for learning new skills.
+                 And now that I look back, I think I have acquired much experience. This experience is what matters to me the most.
+              </p>
+              <p class="section__body data-split-words">
+                I’m a multidisciplinary creator who treats hobbies as research labs. Programming, game development, visual design, arts,
+                crafts, and learning all feed one another — each universe is a lens on the same curiosity.
+              </p>
+              <p class="section__body">
+                I’m especially interested in how <span class="underline-animate">systems and stories</span> overlap: interfaces that feel
+                like narratives, puzzles that teach, tools that invite play, and small experiments that grow into larger worlds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Universe Selector Grid -->
+      <section id="universes" class="section section--universes" data-section="universes">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-left reveal">
+              <p class="eyebrow">Universes</p>
+              <h2 class="section__title">
+                Choose a <span class="hero__accent">universe</span> to enter.
+              </h2>
+            </div>
+            <div class="section__header-right reveal delayed">
+              <p class="section__body">
+                The homepage is a quiet map. Each card below is a universe — a dedicated page containing projects, experiments, notes, and
+                proof-of-concepts within that discipline.
+              </p>
+            </div>
+          </div>
+
+          <div class="universe-grid reveal">
+            <a class="universe-card js-tilt js-universe-link" href="programming.html">
+              <div class="universe-card__inner">
+                <div class="universe-card__icon">01</div>
+                <div class="universe-card__body">
+                  <h3 class="universe-card__title">Programming</h3>
+                  <p class="universe-card__text">
+                    Systems, tools, and code experiments that turn ideas into precise, working programs.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a class="universe-card js-tilt js-universe-link" href="gamedev.html">
+              <div class="universe-card__inner">
+                <div class="universe-card__icon">02</div>
+                <div class="universe-card__body">
+                  <h3 class="universe-card__title">Game Development</h3>
+                  <p class="universe-card__text">
+                    Prototypes, mechanics, and narrative systems that turn rules into playful worlds.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a class="universe-card js-tilt js-universe-link" href="art.html">
+              <div class="universe-card__inner">
+                <div class="universe-card__icon">03</div>
+                <div class="universe-card__body">
+                  <h3 class="universe-card__title">Arts &amp; Crafts</h3>
+                  <p class="universe-card__text">
+                    Paintings, sketches, and their mediums exploring visual aesthetics, in addition to handcrafted stuffs.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a class="universe-card js-tilt js-universe-link" href="music.html">
+              <div class="universe-card__inner">
+                <div class="universe-card__icon">04</div>
+                <div class="universe-card__body">
+                  <h3 class="universe-card__title">Music</h3>
+                  <p class="universe-card__text">
+                    A journey through music &amp; musical instruments influencing me
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a class="universe-card js-tilt js-universe-link" href="learning.html">
+              <div class="universe-card__inner">
+                <div class="universe-card__icon">06</div>
+                <div class="universe-card__body">
+                  <h3 class="universe-card__title">Personal Growth</h3>
+                  <p class="universe-card__text">
+                    Notes, references, and meta-experiments to keep learning across disciplines.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="universe-selector__hint">
+            Click any universe card to delve into that world.
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Experiments (Horizontal Scroll) -->
+      <section id="projects" class="section section--featured" data-section="projects">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-left reveal">
+              <p class="eyebrow">Featured</p>
+              <h2 class="section__title">Featured projects from across universes.</h2>
+            </div>
+            <div class="section__header-right reveal delayed">
+              <p class="section__body">
+                A cinematic strip of projects from different hobbies — scroll horizontally or use your trackpad to move through them.
+              </p>
+            </div>
+          </div>
+
+          <div class="featured-strip js-horizontal-scroll">
+            <div class="featured-strip__inner">
+              <article class="featured-card js-tilt reveal"><a href="art.html#projects">
+                <div class="featured-card__media--placeholder" style=" 
+                background-image:
+                linear-gradient(
+                  rgba(0,0,0,0.25),
+                  rgba(0,0,0,0.35)
+                ),url('images/ship.png');"></div>
+                <div class="featured-card__body">
+                  <div class="featured-card__meta">
+                    <span class="tag">Crafts</span>
+                    <span class="meta-text">Showcase</span>
+                  </div>
+                  <h3 class="featured-card__title">The Black Pearl</h3>
+                  <p class="featured-card__text">
+                    A handcrafted big-scale project, exploring efforts put into it, both mental and physical.<br/>
+                    Click to see in full context!
+                  </p>
+                </div></a>
+              </article>
+
+              <article class="featured-card js-tilt reveal delayed">
+                <div class="featured-card__media--placeholder" style=" 
+                background-image:
+                linear-gradient(
+                  rgba(0,0,0,0.25),
+                  rgba(0,0,0,0.35)
+                ),url('images/gen_alg.png');"></div>
+                <div class="featured-card__body">
+                  <div class="featured-card__meta">
+                    <span class="tag">Programming</span>
+                    <span class="meta-text">Interactive</span>
+                  </div>
+                  <h3 class="featured-card__title">Genetic Algorithm</h3>
+                  <p class="featured-card__text">
+                    A small interactive system about simulating rockets reach a target, scored with genetic algorithm. Click to see the demo!
+                  </p>
+                </div>
+              </article>
+
+              <article class="featured-card js-tilt reveal">
+                <div class="featured-card__media--placeholder" style=" 
+                background-image:
+                linear-gradient(
+                  rgba(0,0,0,0.25),
+                  rgba(0,0,0,0.35)
+                ),url('images/digicare.png');"></div>
+                <div class="featured-card__body">
+                  <div class="featured-card__meta">
+                    <span class="tag">Programming</span>
+                    <span class="meta-text">Hybrid</span>
+                  </div>
+                  <h3 class="featured-card__title">DigiCare Website</h3>
+                  <p class="featured-card__text">
+                    A private website for hospitals for searching through patients data and getting live updates.
+                  </p>
+                </div>
+              </article>
+
+            <article class="featured-card reveal js-tilt"><a href="projects/chord.html" target="_blank">
+              <!-- <div class="card__media card__media--placeholder">Tape Loop Studies</div> -->
+                <div class="featured-card__media--placeholder" style=" 
+                background-image:
+                linear-gradient(
+                  rgba(0,0,0,0.25),
+                  rgba(0,0,0,0.35)
+                ),url('images/music_gen.png');
+                background-position: bottom;"></div>
+              <div class="featured-card__body">
+                <div class="featured-card__meta">
+                  <span class="tag">Loops</span>
+                  <span class="meta-text">Analog / Digital</span>
+                </div>
+                <h3 class="featured-card__title">Proceural Music Generator</h3>
+                <p class="featured-card__text">
+                  Experiments with repeating fragments and slow drift, exploring how subtle variation affects mood and attention. Click to see the demo!
+                </p>
+              </div></a>
+            </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials / Achievements -->
+      <section id="testimonials" class="section section--testimonials" data-section="testimonials">
+        <div class="container narrow">
+          <div class="section__header">
+            <div class="section__header-left reveal">
+              <p class="eyebrow">Words &amp; Signals</p>
+              <h2 class="section__title">The Hall of Quotes.</h2>
+            </div>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial reveal">
+              <p class="testimonial__quote">
+                "Life is like a box of chocolates. You never know what you're gonna get."
+              <p class="testimonial__meta">— Forrest Gump</p>
+            </article>
+
+            <article class="testimonial reveal delayed">
+              <p class="testimonial__quote">
+                “The unexamined life is not worth living… but the examined one isn’t that great either.”
+              </p>
+              <p class="testimonial__meta">— Socrates</p>
+            </article>
+          </div>
+
+          <div class="stats-grid reveal">
+            <div class="stat">
+              <div class="stat__value">5+ yrs</div>
+              <div class="stat__label">exploring creative universes</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">20+</div>
+              <div class="stat__label">personal projects &amp; experiments</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">∞</div>
+              <div class="stat__label">unfinished ideas worth keeping</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Creative Philosophy -->
+      <section id="philosophy" class="section section--philosophy" data-section="philosophy">
+        <div class="container narrow">
+          <p class="eyebrow reveal">Creative Philosophy</p>
+          <h2 class="section__title reveal">
+            Make <span class="text-muted">small, useless things.</span><br />
+            Let them <span class="hero__accent">redefine</span> you.
+          </h2>
+          <div class="philosophy__body">
+            <p class="section__body reveal">
+              I think in universes: each hobby is a space with its own rules, tools, and materials. Instead of forcing them into one
+              narrow identity, I let them redefine their limits. It's all about how much effort you put into it.
+            </p>
+            <p class="section__body reveal delayed">
+              The through-line is curiosity. I care less about polished outcomes and more about whether a project asks a real question:
+              <span class="text-muted">What if? How else? Who is this for?</span> This portfolio is a snapshot of those questions in motion.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Collaboration -->
+      <section id="contact" class="section section--contact" data-section="contact">
+        <div class="container narrow">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="section__title reveal">
+            Looking to build<br />
+            something across worlds?
+          </h2>
+          <p class="section__body reveal">
+            I’m open to collaborations, commissions, and quietly ambitious side projects — especially those that sit between disciplines.
+            You can also drop any suggestions or messages through Email or DM.
+          </p>
+          <div class="contact__actions reveal delayed">
+            <a href="mailto:tasfiq3432@gmail.com" class="button button--primary">Email me</a>
+            <div class="contact__meta">
+              <span class="meta-text">Or find me on</span>
+              <a href="https://www.facebook.com/tasfiq.ibrar/" class="link-muted">Facebook</a>
+              <span class="meta-separator">/</span>
+              <a href="https://www.instagram.com/_t_as_fiq/" class="link-muted">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="meta-text">&copy; <span id="year"></span> Multiverse of Hobbies</span>
+        <span class="meta-text">Built as an experiment for exploring hobbies and inspiring.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+

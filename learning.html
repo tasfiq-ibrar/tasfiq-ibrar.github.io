@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=62038&format=png&color=000000">
+  <title>The Multiverse of Hobbies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="nav__inner container">
+        <div class="nav__brand">
+          <span class="nav__logo-dot"></span>
+          <span class="nav__title">Learning Universe</span>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+        </button>
+        <nav class="nav__links">
+          <a href="index.html#hero" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+
+          <a href="index.html#universes" class="nav__link">Universes</a>
+
+          <div class="nav__dropdown-menu">
+
+          <a class="link-muted" href="programming.html">Programming</a>
+          <a class="link-muted" href="gamedev.html">Gamedev</a>
+          <a class="link-muted" href="art.html">Arts &amp; Crafts</a>
+          <a class="link-muted" href="music.html">Music</a>
+          <a class="link-muted" href="learning.html">Learning</a>
+
+          </div>
+          </div>
+          <a href="#insights" class="nav__link">Insights</a>
+          <a href="index.html#contact" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero section--universe">
+        <div class="container">
+          <canvas id="starfield"></canvas>
+          <div class="universe__header reveal blur-on-reveal">
+            <div>
+              <p class="eyebrow">Universe VII</p>
+              <h1 class="universe__title">Learning Universe</h1>
+            </div>
+            <p class="universe__description">
+              Notes, languages, activities, and research habits that influence personal growth. This universe feeds all the others by making learning itself a creative
+              practice.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="insights">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-left reveal">
+              <p class="eyebrow">Learning Insights</p>
+              <h2 class="section__title">A tour where <a class="hero__accent">Curiosity</a> leads.</h2>
+            </div>
+          </div>
+          <div class="universe__grid">
+            <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('https://cdn.pixabay.com/photo/2024/12/16/19/31/piano-9271509_1280.jpg');
+                      background-position: center;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Micro Content</span>
+                  <span class="meta-text">Instrument</span>
+                </div>
+                <h3 class="card__title">Learning Piano</h3>
+                <p class="card__text">
+                  I’ve taken on piano as for learning a new instrument, performing at a few functions along the way. The journey comes with challenges—mastering hand coordination, reading sheet music, and maintaining rhythm under pressure. 
+                  I would also love to learn Ukelele if I could.
+                </p>
+              </div>
+            </article>
+            <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('https://images.prismic.io/milanote/de228b7a-a59d-431e-bf54-9523d38c5c70_image-milanote-desktop-app.png?auto=compress,format');
+                      background-position: center;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Micro Content</span>
+                  <span class="meta-text">Tools</span>
+                </div>
+                <h3 class="card__title">Task Organizers</h3>
+                <p class="card__text">
+                  As an artist, game developer, and designer, staying organized is essential to managing complex projects. I use tools like Milanote for visual brainstorming and Notion for structured planning, keeping track of ideas, assets, and workflows. 
+                  These platforms help me balance creativity with discipline, ensuring that every project stays clear, efficient, and on course.
+                </p>
+              </div>
+            </article>
+            <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('https://img.freepik.com/premium-vector/waving-flag_238578-1571.jpg?semt=ais_hybrid');
+                      background-position: center;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Micro Content</span>
+                  <span class="meta-text">Language</span>
+                </div>
+                <h3 class="card__title">Learning Spanish</h3>
+                <p class="card__text">
+                  I’ve been exploring Spanish to expand my communication skills and cultural understanding. Learning a new language challenges memory, logic, and adaptability—skills.
+                  And I’m motivated to reach fluency in the future through consistent practice and immersion.
+                </p>
+              </div>
+            </article>
+
+            <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('https://tecnobits.com/wp-content/uploads/2025/11/a4de3903-fda0-438f-bfbb-3bde8e0b9c7e-1536x864.webp');
+                      background-position: center;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Meta</span>
+                  <span class="meta-text">Development</span>
+                </div>
+                <h3 class="card__title">AI tools</h3>
+                <p class="card__text">
+                  In this era of AI, it is essential to keep up with the modern techs. So I had recently explored some AI‑powered tools, and I wasn't disappointed. Using Cursor, I’ve streamlined coding and rapid prototyping, while Antigravity has fueled my experiments in technical problem‑solving. 
+                  These tools align with my background in logic, design, and creative coding—helping me push boundaries, optimize processes, and bring ambitious ideas to life.
+                </p>
+              </div>
+            </article>
+            <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('https://i.pinimg.com/736x/82/84/ff/8284ff3feb7f4aee2eb9b0b83694aa9e.jpg');
+                      background-position: bottom;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Micro Content</span>
+                  <span class="meta-text">Physical</span>
+                </div>
+                <h3 class="card__title">Calisthenics</h3>
+                <p class="card__text">
+                  Calisthenics is a form of bodyweight training that emphasizes strength, control, and mobility without relying on external weights. 
+                  It’s all about mastering skills that demand balance and core stability. Personally, I am trying to achieve handstand and planche lever.
+                </p>
+              </div>
+            </article>
+            <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('https://www.activision.com/content/dam/atvi/activision/atvi-touchui/blog/sekiro/feature/Sekiro_Boss_Videos_TOUT_01.jpg');
+                      background-position: center;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Micro Content</span>
+                  <span class="meta-text">Entertainment</span>
+                </div>
+                <h3 class="card__title">Gaming</h3>
+                <p class="card__text">
+                  Gaming has shaped how I think and create. Also as a Gamedev, gaming is absolutely needed for inspiration and solutions. Sekiro: Shadows Die Twice taught me precision and resilience. The Mortuary Assistant has been my favorite in the horror genre. 
+                  Elden Ring expanded my love for vast, interconnected worlds, and Psychosis on mobile showed how small games can deliver deep emotional impact.
+                </p>
+              </div>
+            </article>
+            <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('https://i.pinimg.com/736x/dd/09/0d/dd090d93637d548b05606613bd3f9db0.jpg');
+                      background-position: center;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Micro Content</span>
+                  <span class="meta-text">Reading</span>
+                </div>
+                <h3 class="card__title">Cultural Fandoms</h3>
+                <p class="card__text">
+                  Actually there's fun in reading niche fandoms. I personally prefer SCP fandoms, if you don't know what's that, go search it up:)
+                  And if you're not into reading, more into visual stuff, you should check out "TheRubber" Youtube channel. Also I'm a huge fan of Marvel and DC universes.
+                  Also I watched some anime, like one punch man, your name, A silent voice, mob psycho 100, Rezero, weathering with you, etc. And man, Rezero was really mind-blowing.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="meta-text">&copy; <span id="year"></span> The Multiverse of Hobbies</span>
+        <span class="meta-text">Currently traveling through the Learning Universe.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
+

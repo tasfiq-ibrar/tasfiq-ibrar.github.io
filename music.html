@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=62038&format=png&color=000000">
+  <title>The Multiverse of Hobbies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="nav__inner container">
+        <div class="nav__brand">
+          <span class="nav__logo-dot"></span>
+          <span class="nav__title">Music Universe</span>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+        </button>
+        <nav class="nav__links">
+          <a href="index.html#hero" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+
+          <a href="index.html#universes" class="nav__link">Universes</a>
+
+          <div class="nav__dropdown-menu">
+
+          <a class="link-muted" href="programming.html">Programming</a>
+          <a class="link-muted" href="gamedev.html">Gamedev</a>
+          <a class="link-muted" href="art.html">Arts & Crafts</a>
+          <a class="link-muted" href="music.html">Music</a>
+          <a class="link-muted" href="learning.html">Learning</a>
+
+          </div>
+          </div>
+          <a href="#experiments" class="nav__link">Experiments</a>
+          <a href="#insights" class="nav__link">Insights</a>
+          <a href="index.html#contact" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero section--universe" id="projects">
+        <div class="container">
+        <canvas id="starfield"></canvas>
+          <div class="universe__header reveal blur-on-reveal">
+            <div>
+              <p class="eyebrow">Universe IV</p>
+              <h1 class="universe__title">Music Universe</h1>
+            </div>
+            <p class="universe__description">
+              Experience, favorite artists, instruments, and small sound experiments. This universe explores how sound shapes focus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="section reveal" style="
+                background-size: cover; 
+                background-image:
+                linear-gradient(
+                  rgba(0,0,0,0.45),
+                  rgba(0,0,0,0.55)
+                ),url('https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c1/f1/3e/c1f13e56-448d-00f0-96d6-45fd50f97f40/886447612866.jpg/1200x1200bf-60.jpg');">
+        <div class="container narrow">
+          <p class="eyebrow reveal">Learning Insights</p>
+          <h2 class="section__title reveal">Journey of Music.</h2>
+
+          <div class="philosophy__body">
+            <div class="glass-panel reveal" style="padding: 20px 22px; margin-bottom: 20px; display:flex; gap:18px;">
+              <div style="flex:2;">
+                <h3 class="card__title">Getting started here</h3>
+                <p class="section__body">
+                  I started listening to music quite a while ago, from some TV channels. Which was heavily influenced from different genres during the COVID.
+                  From then, I have been listening to music as ambience for focusing on any hobbies, or even studying.<br/><br/>
+                  I thought i should learn a new instrument, as it also improves focus and dexterity. So I picked Piano for this, and hell, it's tough.
+                  It requires ambidextrous movement, sometimes indepenent. And it also needs consistent practice, so i'm quite dull in it. (failure as an Asian)<br/>
+                  I have danced a lot, in cultural functions, and I have also sung sometimes. But I wish I had a better voice:).
+                </p>
+              </div>
+            </div>
+
+            <div class="glass-panel reveal" style="padding: 20px 22px; margin-bottom: 20px; display:flex; gap:18px;">
+              <div style="flex:2;">
+                <h3 class="card__title">Future References</h3>
+                <p class="section__body">
+                  I would try learning ukelele, if i could learn any new instruments. Also learning to read sheet music would be dope.
+                  Learning to play any song i want in the Piano would be awesome too!<br/>
+                  For ambient music, I would suggest "Nobody" on youtube. Also, for learning music theory, you can visit "Synthet7" on youtube too.
+                </p>
+              </div>
+              <aside style="flex:2; border-left:1px solid rgba(255,255,255,0.1); padding-left:16px;">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/_DSC0821.JPG');
+                      background-position: left;
+                      width: 250px;
+                      height: 250px;
+                      border: 2px solid; /* thickness */
+                      border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1;
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+                <p class="section__body">A function during Excursion</p></aside>
+            </div>
+
+            <div class="glass-panel reveal" style="padding: 20px 22px; margin-bottom: 20px; display:flex; gap:18px;">
+              <div style="flex:1;">
+                <h3 class="card__title">🎵 Favorite Artists</h3>
+                <ul class="section__body">
+                  <li>Alan Walker</li>
+                  <li>Billie Eilish</li>
+                  <li>BoyWithUke</li>
+                </ul>
+              </div>
+              <aside style="flex:2; border-left:1px solid rgba(255,255,255,0.1); padding-left:16px;">
+                <h4 class="card__title">🎧 Listening List</h4>
+                  <ul class="section__body">
+                    <li class="link-muted"><a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" target="_blank">On My Way – Alan Walker & Sabrina Carpenter</a></li>
+                    <li><a class="link-muted" href="https://www.youtube.com/watch?v=EgBJmlL5l9c" target="_blank">Wildflower – Billie Eilish</a></li>
+                    <li><a class="link-muted" href="https://www.youtube.com/watch?v=Qf0t4qIVWF4" target="_blank">Understand – BoyWithUke</a></li>
+                  </ul>
+              </aside>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experiments">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-left reveal">
+              <p class="eyebrow">Experiments</p>
+              <h2 class="section__title">Sound sketches &amp; tests.</h2>
+            </div>
+          </div>
+
+          <div class="experiments-grid">
+            <article class="card card--experiment glass-panel reveal js-tilt"><a href="projects/chord.html" target="_blank">
+              <!-- <div class="card__media card__media--placeholder">Tape Loop Studies</div> -->
+                <div class="featured-card__media--placeholder" style=" 
+                background-image:
+                linear-gradient(
+                  rgba(0,0,0,0.25),
+                  rgba(0,0,0,0.35)
+                ),url('images/music_gen.png');
+                background-position: bottom;"></div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag">Loops</span>
+                  <span class="meta-text">Analog / Digital</span>
+                </div>
+                <h3 class="card__title">Proceural Music Generator</h3>
+                <p class="card__text">
+                  Experiments with repeating fragments and slow drift, exploring how subtle variation affects mood and attention. Click to see the demo!
+                </p>
+              </div></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="meta-text">&copy; <span id="year"></span> The Multiverse of Hobbies</span>
+        <span class="meta-text">Currently traveling through the Music Universe.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
+

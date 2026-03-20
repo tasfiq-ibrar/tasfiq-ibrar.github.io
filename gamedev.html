@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=62038&format=png&color=000000">
+  <title>The Multiverse of Hobbies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="nav__inner container">
+        <div class="nav__brand">
+          <span class="nav__logo-dot"></span>
+          <span class="nav__title">Game Development Universe</span>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+        </button>
+        <nav class="nav__links">
+          <a href="index.html#hero" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+
+          <a href="index.html#universes" class="nav__link">Universes</a>
+
+          <div class="nav__dropdown-menu">
+
+          <a class="link-muted" href="programming.html">Programming</a>
+          <a class="link-muted" href="gamedev.html">Gamedev</a>
+          <a class="link-muted" href="art.html">Arts &amp; Crafts</a>
+          <a class="link-muted" href="music.html">Music</a>
+          <a class="link-muted" href="learning.html">Learning</a>
+
+          </div>
+          </div>
+          <a href="#experiments" class="nav__link">Experiments</a>
+          <a href="#insights" class="nav__link">Insights</a>
+          <a href="index.html#contact" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+<main>
+  <section class="section section--hero section--universe" id="projects">
+    <div class="container">
+      <canvas id="starfield"></canvas>
+      <div class="universe__header reveal blur-on-reveal">
+        <div>
+          <p class="eyebrow">Universe II</p>
+          <h1 class="universe__title">Game Development Universe</h1>
+        </div>
+        <p class="universe__description">
+          A progression from simple programming exercises to building full systems and game architectures.
+          This space documents my journey from learning languages to designing responsive gameplay, AI behaviors,
+          and interconnected systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="insights" class="section">
+    <div class="container">
+      <p class="eyebrow reveal">Learning Insights</p>
+      <h2 class="section__title reveal">What I learned as Indie Gamedev.</h2>
+
+      <div class="philosophy__body">
+
+        <div class="glass-panel reveal" style="padding: 20px 22px; margin-bottom: 20px; display:flex; gap:18px;">
+          <div style="flex:2;">
+            <h3 class="card__title">Getting started here</h3>
+            <p class="section__body">
+              Started with making games in Javascript, then moved into Unity.
+              Eventually transitioned into GameMaker Studio 2 to focus on 2D gameplay and rapid iteration.
+              The journey has been solely about turning logic into interaction.
+
+              <br/>
+              I use all types of open-source, free tools for my work, including Libresprite for 2d art, Blender for 3d modeling, Krita as photoshop alternative, Ms Clipchamp for editing,
+              Vscode as external code editor, Pinterest for all types of inspiration, Itch.io resources as placeholder assets, and etc.
+            </p>
+          </div>
+          <aside style="flex:1; border-left:1px solid rgba(255,255,255,0.1); padding-left:16px;">
+            <h4 class="card__title">Starter quests</h4>
+            <p class="section__body">
+              • Build a basic movement system<br />
+              • Implement collision & physics<br />
+              • Create a simple enemy AI
+            </p>
+          </aside>
+        </div>
+        
+        <div class="glass-panel reveal" style="padding: 20px 22px; margin-bottom: 20px; display:flex; gap:18px;">
+          <div style="flex:2;">
+            <h3 class="card__title">Future goals</h3>
+            <p class="section__body">
+              Expanding the current project into a complete playable experience with polished combat,
+              diverse enemy types, and meaningful progression systems. Long-term focus on mastering
+              game feel, animation integration, and scalable architecture.
+              Also I want to make a 3d survival-horror game, an it's been a long time since I used Unity!
+            </p>
+          </div>
+          <aside style="flex:1; border-left:1px solid rgba(255,255,255,0.1); padding-left:16px;">
+            <h4 class="card__title">Current progression</h4>
+            <p class="section__body">
+              • Advanced combat systems<br />
+              • Boss design<br />
+              • Visual polish & effects
+            </p>
+          </aside>
+        </div>
+
+        <div class="glass-panel reveal" style="padding: 20px 22px; display:flex; gap:18px;">
+          <div style="flex:2;">
+            <h3 class="card__title">References</h3>
+            <p class="section__body">
+              Playing diverse games is crucial for a gamedev. That's where the inspirations come from! Also Indie gamedev is really hard, so don't fall into the "tutorial hell", and stress mess:)
+              
+              <br/>Take inspiration from mostly system-driven design and various games you played. Focus on understanding
+              how mechanics, feedback, and player control combine to create satisfying gameplay loops.
+            </p>
+          </div>
+          <aside style="flex:1; border-left:1px solid rgba(255,255,255,0.1); padding-left:16px;">
+            <h4 class="card__title">Influences</h4>
+            <p class="section__body">
+              Visually aesthetic indie games, Metroidvanias, and systems-heavy design approaches.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="experiments" class="section">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__header-left reveal">
+          <p class="eyebrow">Experiments</p>
+          <h2 class="section__title">Gallery of Experiments.</h2>
+        </div>
+      </div>
+
+      <div class="experiments-grid">
+        <article class="card card--experiment glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/antarctica.gif');
+                      background-position: bottom;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div><p class="text-muted">Testing out a stylized 3d scene render</p>
+        </article>
+
+        <article class="card card--experiment glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/projectPic.PNG');
+                      background-position: center;
+                      height: 25vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div><p class="text-muted">Water shader in Godot</p>
+        </article>
+
+        <article class="card card--experiment glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/level.png');
+                      background-position: top;
+                      height: 25vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div><p class="text-muted">2d level design</p>
+        </article>
+
+        <article class="card card--experiment glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/blender.png');
+                      background-position: top;
+                      height: 25vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div><p class="text-muted">3d modeling in blender</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__header-left reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section__title">Systems and evolving gameplay.</h2>
+        </div>
+      </div>
+
+      <div class="universe__grid">
+        <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/preview.png');
+                      background-position: center;
+                      height: 30vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="tag">In Development</span>
+              <span class="meta-text">Action / Platformer</span>
+            </div>
+            <h3 class="card__title">The Upsurge</h3>
+            <p class="card__text">
+              A fast-paced 2D action platformer built in GameMaker Studio 2. Focused on fluid movement,
+              melee combat chains, modular enemy AI using FSMs, and responsive player control.
+              This project explores how combat feel, animation timing, and system design come together.
+            </p>
+          </div>
+        </article>
+
+        <article class="card glass-panel reveal js-tilt">
+              <div class="featured-card__media--placeholder" 
+                  style="
+                      background-image: url('images/unity.png');
+                      background-position: bottom;
+                      height: 25vw;
+
+                      /* border: 2px solid; thickness */
+                      /* border-image: linear-gradient(135deg, var(--accent-2), var(--accent-3)) 1; */
+                      border-radius: 12px; /* optional */
+                  ">
+              </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="tag">Learning Phase</span>
+              <span class="meta-text">Unity / C#</span>
+            </div>
+            <h3 class="card__title">Unity Prototypes</h3>
+            <p class="card__text">
+              Initial exploration into game development using Unity and C#. Focused on understanding
+              object behavior, basic physics, and scripting structures. These projects helped bridge
+              the gap between programming knowledge and interactive systems.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="meta-text">&copy; <span id="year"></span> The Multiverse of Hobbies</span>
+        <span class="meta-text">Currently traveling through the Game Development Universe.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
